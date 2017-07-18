@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="group_height">36dp</dimen>
+    <dimen name="item_height">36dp</dimen>
+
+    <dimen name="edittext_height">36dp</dimen>
+    <dimen name="edittext_margin">5dp</dimen>
+
+    <dimen name="search_layout_height">45dp</dimen>
+</resources>

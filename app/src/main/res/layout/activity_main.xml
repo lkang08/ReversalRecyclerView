@@ -1,18 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="lk.reversalrecyclerview.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/search_layout_height"></android.support.v7.widget.RecyclerView>
 
-</android.support.constraint.ConstraintLayout>
+    <include
+        android:id="@+id/common_group_layout"
+        layout="@layout/activity_group_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_height"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/search_layout_height"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_layout_height"
+        android:layout_gravity="bottom"
+        android:background="#e260f1">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:text="Add new group"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+</FrameLayout>
